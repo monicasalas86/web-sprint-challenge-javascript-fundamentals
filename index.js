@@ -17,7 +17,7 @@ myFunction();
 
 //🚀🚀🚀 ⬇️ 📝 Explanation ⬇️ 📝 🚀🚀🚀: 
 
-
+// nestedFunction can access the internal variable because the variable was defined in the same function as nestedFunction (in the same block scope).
 
 
 
