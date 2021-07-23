@@ -29,9 +29,13 @@ myFunction();
 For example, `summation(4)` should return 10 because 1+2+3+4 is 10. Note, you may use a for loop for this function if you wish */
 
 function summation(number) {
-  
+  let sum = 0;
+  for(let i = 1; i <= number; i++){
+    sum +=i;
   }
-  // console.log('task 2:', summation(5));
+  return sum;
+  }
+  console.log('task 2:', summation(5));
 
 // 🦁🦁🦁 Topic 2: ADVANCED Array Methods 🦁🦁🦁
 // Given this zoo data from around the United States, follow the instructions below. Use the specific array methods in the requests below to solve the problems.
@@ -62,7 +66,7 @@ const zooAnimals = [
     });
     return displayNames;
   }
- console.log('Task 2, Request 1:',animalNames());
+ console.log('Arrays, Request 1:',animalNames());
 
   /* 🦁🦁🦁 Request 2: .map() 🦁🦁🦁
   The zoo needs a list of all their animal's names converted to lower case. 
@@ -76,7 +80,7 @@ const zooAnimals = [
     });
     return lowerCase;
   }
-  console.log('Task 2, Request 2:', lowerCaseNames());
+  console.log('Arrays, Request 2:', lowerCaseNames());
   
   
   /* 🦁🦁🦁 Request 3: .filter() 🦁🦁🦁
@@ -90,7 +94,7 @@ const zooAnimals = [
     });
     return lowPop;
   }
-  console.log('Task 2, Request 3:', lowPopulationAnimals());
+  console.log('Arrays, Request 3:', lowPopulationAnimals());
 
   /* 🦁🦁🦁 Request 4: .reduce() 🦁🦁🦁
   The zoo needs to know their total animal population across the United States. 
@@ -104,7 +108,7 @@ const zooAnimals = [
     }, 0);
     return totalPop;
   }
-  console.log('Task 2, Request 4:', USApop());
+  console.log('Arrays, Request 4:', USApop());
   
   
   // 🦁🦁🦁 Callbacks 🦁🦁🦁  
